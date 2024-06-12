@@ -1,0 +1,31 @@
+6. Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+"Telefonou para a vítima?" "Esteve no local do crime?" "Mora perto da vítima?" "Devia
+para a vítima?" "Já trabalhou com a vítima?" O programa deve no final emitir uma
+classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a
+2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como
+"Assassino". Caso contrário, ele será classificado como "Inocente".
+
+puts "Telefonou para a vítima? \n[0]Não \n[1]Sim"
+test1 = gets.to_i
+
+puts "Esteve no local do crime? \n[0]Não \n[1]Sim "
+test2 = gets.to_i
+
+puts "Mora perto da vítima? \n[0]Não \n[1]Sim "
+test3 = gets.to_i
+
+puts "Já trabalhou com a vítima? \n[0]Não \n[1]Sim "
+test4 = gets.to_i
+
+puts "Devia para a vitima? \n[0]Sim \n[1]Não "
+test5 = gets.to_i
+
+soma = test1 + test2 + test3 + test4 + test5
+
+if (soma == 2)
+    puts "Suspeita"
+elsif (soma == 3) || (soma == 4)
+        puts "Cumplice"        
+else (soma == 5)
+         puts "Assasino"        
+end
