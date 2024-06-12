@@ -1,0 +1,40 @@
+Faça um Programa que pergunte quanto você ganha por hora e o número de horas
+trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+
+puts "Qual seu valor por hora trabalhada? "
+hora = gets.to_f
+
+puts "Quantas horas voce trabalha no mes? "
+mes = gets.to_f
+
+salario = hora * mes
+
+puts "Voce recebe R$ #{salario.round(2)} por mes"
+
+Calcule e mostre o total do seu salário no referido
+mês, sabendo-se que são descontados 11% para o
+Imposto de Renda, 8% para o INSS e 5% para o
+sindicato, faça um programa que nos dê: salário bruto.
+quanto pagou ao INSS. quanto pagou ao sindicato. o
+salário líquido. calcule os descontos e o salário
+líquido, conforme a tabela ao lado.
+Obs.: Salário Bruto - Descontos = Salário Líquido.
+
+puts "Qual seu valor por hora trabalhada? "
+hora = gets.to_f
+
+puts "Quantas horas voce trabalha no mes? "
+mes = gets.to_f
+
+salario = hora * mes
+imprend = salario * 0.11
+inss = salario * 0.08
+sind = salario * 0.05
+
+descontos = imprend + inss + sind
+salariototal = salario - descontos
+
+puts "Salario Bruto: R$ #{salariototal}"
+puts "Desconto INSS: R$ #{inss}"
+puts "Salario Sindicato: R$ #{sind}"
+puts "Salario Liquido: R$ #{salario}"
