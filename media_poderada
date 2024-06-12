@@ -1,0 +1,21 @@
+Recebendo quatro médias bimestrais, calcule a media do ano (ponderada), sabendo que o 1º
+bimestre tem peso 1, o 2º bimestre tem peso 2, o 3º bimestre tem peso 3 e o 4º bimestre tem
+peso 4. Além disso, sabendo que para aprovação o aluno precisa ter uma média anual maior
+ou igual a 7, escreva uma mensagem indicando se o aluno foi aprovado ou reprovado.
+
+puts "Digite sua media no 1º bimestre: "
+med1 = gets.to_f
+puts "Digite sua media no 2º bimestre: "
+med2 = gets.to_f
+puts "Digite sua media no 3º bimestre: "
+med3 = gets.to_f
+puts "Digite sua media no 4º bimestre: "
+med4 = gets.to_f
+
+media = (med1*1 + med2*2 + med3*3 + med4*4) / 10
+puts media
+if (media >= 7)
+    puts "Aprovado"
+else
+    puts "Reprovado"
+end
