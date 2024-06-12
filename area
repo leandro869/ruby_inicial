@@ -1,0 +1,11 @@
+Faça um programa que receba a altura e largura de um retângulo e calcule a área.
+
+puts"Qual a altura? "
+altura = gets.to_f
+
+puts"Qual a largura? "
+largura = gets.to_f
+
+area = altura * largura
+
+puts "A area do retangulo é: #{area}"
